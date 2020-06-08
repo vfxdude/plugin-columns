@@ -1,0 +1,443 @@
+a.pc-column-header-link {
+    white-space: nowrap;
+    display: flex;    
+}
+
+.column-categories, 
+.column-activated, 
+.column-deactivated, 
+.column-installed, 
+.column-updated,
+.column-folder,
+.column-source,
+.column-author,
+.column-updatedcounter, 
+.column-activatedcounter,
+.column-rating,
+.column-downloaded,
+.column-last_updated,
+.column-added {
+    width: 8%;
+}
+
+@media screen and (max-width: 782px) {
+    .column-categories, 
+    .column-activated, 
+    .column-deactivated, 
+    .column-installed, 
+    .column-updated, 
+    .column-folder,
+    .column-source,
+    .column-author,
+    .column-updatedcounter, 
+    .column-activatedcounter,
+    .column-rating,
+    .column-downloaded,
+    .column-last_updated,
+    .column-added {
+        display: none !important;
+    }
+    
+    .plugins #the-list tr {
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);        
+    }
+
+    .plugins .inactive th {
+        box-shadow: none;
+    }
+}
+
+div.sortable a span, div.sorted a span {
+    float: left;
+    cursor: pointer;
+}
+
+div.asc a:focus span.sorting-indicator, div.asc:hover span.sorting-indicator, div.desc a:focus span.sorting-indicator, div.desc:hover span.sorting-indicator, div.sorted .sorting-indicator {
+    visibility: visible;
+}
+
+div.sortable a span, div.sorted a span {
+    float: left;
+    cursor: pointer;
+}
+
+div.desc a:focus span.sorting-indicator:before, div.desc:hover span.sorting-indicator:before, div.sorted.asc .sorting-indicator:before {
+    content: "\f142";
+}
+
+div.asc a:focus span.sorting-indicator:before, div.asc:hover span.sorting-indicator:before, div.sorted.desc .sorting-indicator:before {
+    content: "\f140";
+}
+
+.pc-header a:focus {
+    box-shadow: none;
+}
+
+.pc-categories-input {
+    display: none;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    z-index: 999999;
+}
+
+.pc-categories-input select {
+    width: 200px;    
+}
+
+.pc-categories-input .select2 li {
+    margin-bottom: 0;    
+}
+
+.pc-categories-input .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid #aaa 1px;    
+}
+
+.pc-val-categories {
+    min-height: 50px;
+    position: relative;
+}
+
+.pc-val-categories .pc-cat-edit, .pc-val-categories .pc-cat-cancel {
+    display: none;
+    margin-left: 3px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999999;
+}
+
+.pc-val-categories .pc-cat-cancel {
+    margin-left: 20px;
+}
+
+.pc-val-categories:hover .pc-cat-edit {
+    display: inline-block;
+}
+
+.pc-val-categories .pc-cat-edit:hover {
+    color: #660000;
+}
+
+.pc-modal-overlay {
+    display: none;
+    position: fixed;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.1;
+    z-index: 99;
+}
+
+#wpbody-content .bulk-edit-row.inline-edit-row-plugins .inline-edit-col-left {
+    width: 40%;
+}
+
+#wpbody-content .inline-edit-row.inline-edit-row-plugins .inline-edit-col-center {
+    width: 30%;
+}
+
+.inline-edit-row-plugins fieldset ul.cat-checklist li, .inline-edit-row-plugins fieldset ul.cat-checklist input {    
+    margin-right: 3px;
+}
+
+.inline-edit-row-plugins > td {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.inline-edit-row-plugins #bulk-titles {
+    height: 13em;
+}
+
+#the-list .inline-edit-row-plugins.inline-edit-row .inline-edit-legend {    
+    padding: 0.2em 0.5em;
+}
+
+.pc-options-dialog {
+    box-sizing: content-box;
+    display: none;    
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 145px;
+    left: 0;    
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 9999;
+}
+
+.pc-options-dialog a {
+    box-shadow: none;
+}
+
+.pc-misc-options {
+    margin-top: 20px;    
+    font-size: 12px;
+}
+
+.pc-header.pc-categories {
+    z-index: 9999;
+}
+
+.pc-options-dialog label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pc-options-dialog label a {
+    text-decoration: none;
+}
+
+.pc-options-dialog li > label {
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.pc-options-dialog .pc-export-include-label {
+    font-weight: normal;
+    margin-top: 10px;    
+}
+
+#export-options-apply {
+    margin-top: 20px;
+}
+
+.pc-options-dialog select {
+    display: block;
+}
+
+.pc-column-admin {
+    margin: 0;
+}
+
+.pc-category-options {
+    margin-top: 20px;
+    width: 230px;
+}
+
+.pc-category-admin-add, .pc-dateformat-options {
+    margin-bottom: 20px;
+}
+
+.pc-delcat {
+    font-size: 17px;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.pc-category-admin {    
+    margin: 5px 0;    
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.pc-tab-options {
+    display: none;
+}
+
+#pc-clear-form, #pc-export-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.pc-clear-options-list {
+    margin-top: 0;
+}
+
+.pc-options-tabs {
+    margin-bottom: 20px;
+}
+
+.pc-options-tabs > a {
+    display: inline-block;
+    padding-right: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: 700;
+    border-right: 1px solid #ddd;
+}
+
+.pc-options-tabs > a:last-child {
+    border-right: none;
+}
+
+.pc-options-tabs > a.active {
+    color: #000000;
+}
+
+th.sortable a.pc-column-header-link, th.sorted a.pc-column-header-link {
+    display: inline-block;
+}
+
+.pc-cat-toggle {
+    display: none;
+    margin-left: 5px;
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.pc-cat-toggle:hover, .pc-cat-toggle.catfeature-enabled {
+    color: #660000;
+    display: inline-block;
+}
+
+.pc-catadm-item:hover .pc-cat-toggle {
+    display: inline-block;    
+}
+
+#pc-import-input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.custom-plugin-view .plugin-card {
+    width: auto !important;
+    border: 0;
+    margin: 0 3px 0 0;
+}
+
+.custom-plugin-view a:focus {
+    box-shadow: none;
+}
+
+.custom-plugin-view.wp-core-ui .wp-list-table.plugins .plugin-card .button-primary {
+    background: transparent;
+    border: none;
+    color: #0073aa;;
+    box-shadow: none;
+    text-shadow: none;
+    line-height: 1;
+    padding: 0;    
+}
+
+.custom-plugin-view .plugin-card .install-now.updating-message:before, 
+.custom-plugin-view .plugin-card .install-now.updated-message:before {
+	color: #f56e28;
+	content: "\f463";
+	display: inline-block;
+	font: normal 20px/1 dashicons;
+    margin: 0 5px 0 -2px;	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+}
+
+.custom-plugin-view .plugin-card .activate-now {
+    display: none;
+}
+
+#pc-category-empty-trash {
+    margin-top: 1px;
+}
+
+#pc-empty-trash-form {
+    display: none;
+}
+
+.custom-plugin-view .manage-column.column-name {
+    min-width: 250px;
+}
+
+.plugins-php .manage-column.hidden.pc-col-visible {
+    display: table-cell;
+}
+
+.pc-errors {
+    margin: 20px 0;
+    color: red;
+    font-size: 1.1em;
+}
+
+.sopc-options {
+    margin: 30px 0;
+}
+
+#sopc-options-warning-text {
+    width: 100%;
+    height: 70px;    
+}
+
+.sopc-options-desc {
+    font-size: 11px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+#meta-info-ajax-dialog {
+    box-sizing: content-box;    
+    width: auto;
+    min-height: auto;
+    position: absolute;
+    top: 100px;
+    left: 45%;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+#meta-info-ajax-dialog h2 {
+    margin-top: 0;
+}
+
+.get-meta-spinner {
+    background: url(../images/spinner.gif) no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;    
+    top: 46px;
+    left: 11px;
+    position: absolute;    
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    width: 20px;
+    height: 20px;
+    margin: 4px 10px 0;
+}
+
+.pc-meta-update {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.pc-meta-update:before {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+}
+
+.pc-number-progression {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ptfixed {
+    position: fixed;
+    top: 32px;    
+    z-index: 999; 
+}
+
+.ptfixed > tr {
+    width: 100%;
+}
