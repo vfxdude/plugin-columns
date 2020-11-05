@@ -3,9 +3,9 @@
 Contributors: coderdimension
 Tags: plugin columns, plugins, plugin, categories, columns, manager, organizer, groups, folders, sort, filter
 Requires at least: 4.5
-Tested up to: 5.1
+Tested up to: 5.4.1
 Requires PHP: 5.6
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 

@@ -3,7 +3,7 @@
  * Plugin Name: Plugin Columns
  * Description: Various columns for the plugins list.
  * Author: Roger Grimstad
- * Version: 1.2.2 Beta
+ * Version: 1.2.2
  */
 
  // Exit if accessed directly.
