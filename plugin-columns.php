@@ -39,7 +39,7 @@ function plugin_columns_add_pinned_categories() {
 				'plugins.php',
 				$pinned_category,
 				$pinned_category,
-				'manage_options',
+				'activate_plugins',
 				str_replace( ' ', '+', $pinned_category) .'-plugin-columns-category-page',				
 				function(){}
 			);
